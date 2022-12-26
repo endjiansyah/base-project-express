@@ -1,0 +1,11 @@
+const path = require('path');
+
+const rootPath = './src';
+
+module.exports = {
+  'config': path.resolve(rootPath, 'config', 'config.json'),
+  'models-path': path.resolve(rootPath, 'models'),
+  'seeders-path': path.resolve(rootPath, 'seeders'),
+  'migrations-path': path.resolve(rootPath, 'migrations')
+};
+// dapat dari https://sequelize.org/docs/v6/other-topics/migrations/#the-sequelizerc-file
